@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destrava Prova - Anatomia para Colorir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .timer-banner {
+            /* Azul da logo (estimado) */
+            background-color: #2563EB; 
+            color: white;
+            padding: 12px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .timer-banner span {
+            /* Laranja da logo (estimado) */
+            color: #F97316;
+            font-weight: 700;
+        }
+        .hero-bg {
+            background-color: #f0f4f8; /* Um cinza azulado bem claro */
+        }
+        .cta-button {
+            /* Laranja da logo */
+            background-color: #F97316;
+            color: white;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .cta-button:hover {
+            background-color: #EA580C; /* Laranja mais escuro */
+            transform: translateY(-2px);
+        }
+        .section-title {
+            /* Azul da logo */
+            color: #2563EB;
+        }
+        .feature-icon {
+            /* Laranja da logo */
+            background-color: #FDBA74; /* Laranja mais claro para o fundo do ícone */
+            color: #C2410C; /* Laranja escuro para o ícone */
+        }
+        .price-text {
+            /* Laranja da logo */
+            color: #F97316;
+        }
+        .footer-bg {
+             /* Azul da logo */
+            background-color: #1E40AF; /* Azul um pouco mais escuro que o timer */
+        }
+        /* Estilo para a logo - ajuste o tamanho conforme necessário */
+        .logo-img {
+            max-width: 280px; /* Ajuste a largura máxima da sua logo */
+            height: auto; /* Mantém a proporção */
+            margin-bottom: 1.5rem; /* 24px */
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <div id="timer-banner" class="timer-banner">
+        🔥 OFERTA RELÂMPAGO! Termina em: <span id="countdown-timer">07:32</span> 🔥
+    </div>
+
+    <div class="pt-20"> <section class="hero-bg py-16 md:py-24 text-center">
+            <div class="container mx-auto px-6">
+                <img src="https://i.imgur.com/YOUR_IMAGE_ID.jpg" alt="Logo Destrava Prova" class="mx-auto logo-img rounded-md">
+                <h1 class="text-4xl md:text-5xl font-extrabold section-title mb-4 leading-tight">
+                    Destrave Seu Aprendizado em Anatomia!
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                    Com o <strong class="text-orange-600">Anatomia para Colorir</strong>, você transforma o estudo em uma experiência visual, divertida e <strong class="text-blue-600">altamente eficaz</strong>. Chega de decoreba!
+                </p>
+                <a href="#oferta" class="cta-button font-bold py-4 px-10 rounded-lg text-lg shadow-lg inline-block">
+                    QUERO APRENDER COLORINDO POR R$9,99!
+                </a>
+                <p class="text-sm text-gray-600 mt-3">Receba por e-mail e comece a estudar agora mesmo!</p>
+            </div>
+        </section>
+
+        <section class="py-12 md:py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold section-title text-center mb-12">
+                    Veja Como é Fácil Aprender Anatomia Assim:
+                </h2>
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x450/E0E7FF/1D4ED8?text=Página+Exemplo+do+Livro" alt="Exemplo do livro Anatomia para Colorir" class="w-full rounded-xl shadow-2xl border-4 border-orange-300">
+                    </div>
+                    <div class="md:w-1/2 text-gray-700 text-lg space-y-4">
+                        <p><strong class="text-blue-700">🎨 Estudo Ativo e Visual:</strong> Ao colorir, você se envolve com o material, memorizando estruturas e nomes de forma natural.</p>
+                        <p><strong class="text-blue-700">🧠 Fixação Duradoura:</strong> A combinação de cores e formas ajuda a criar conexões neurais mais fortes, facilitando a lembrança.</p>
+                        <p><strong class="text-blue-700">💻 Acesso Imediato e Prático:</strong> Receba o livro em PDF no seu e-mail. Estude no tablet, computador ou imprima quantas vezes quiser.</p>
+                        <p><strong class="text-blue-700">🏆 Prepare-se para o Sucesso:</strong> Domine o conteúdo de anatomia e sinta-se confiante para suas provas e desafios acadêmicos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-50 py-12 md:py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold section-title text-center mb-12">
+                    Por Que o "Anatomia para Colorir" é Perfeito Para Você?
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Aprendizado Divertido</h3>
+                        <p class="text-gray-600">Diga adeus às horas chatas de estudo. Aprender anatomia nunca foi tão prazeroso!</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6-2.292m0 0v14.25" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Conteúdo de Qualidade</h3>
+                        <p class="text-gray-600">Ilustrações detalhadas e precisas, criadas para facilitar sua compreensão.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Resultados Rápidos</h3>
+                        <p class="text-gray-600">Veja seu conhecimento decolar e sua confiança para as provas aumentar significativamente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="oferta" class="py-12 md:py-20 hero-bg">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold section-title mb-4">
+                    Garanta Seu Acesso Agora Mesmo!
+                </h2>
+                <p class="text-lg text-gray-700 mb-6 max-w-xl mx-auto">
+                    Não perca esta oportunidade única de revolucionar seus estudos de anatomia.
+                    A promoção está acabando!
+                </p>
+                <div class="bg-white p-8 md:p-10 rounded-xl shadow-2xl max-w-md mx-auto border-4 border-orange-400">
+                    <p class="text-xl text-gray-600 mb-2">De <span class="line-through">R$29,90</span> por apenas:</p>
+                    <p class="text-6xl md:text-7xl font-extrabold price-text my-4">
+                        R$ 9,99
+                    </p>
+                    <p class="text-gray-600 mb-6">Pagamento único. Acesso vitalício.</p>
+                    <a href="#" class="cta-button w-full font-bold py-4 px-8 rounded-lg text-xl shadow-lg inline-block">
+                        SIM, QUERO MEU ANATOMIA PARA COLORIR!
+                    </a>
+                    <p class="text-xs text-gray-500 mt-4">Compra 100% segura. Entrega imediata por e-mail.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer-bg text-white text-center py-8">
+        <p>&copy; <span id="currentYear"></span> Destrava Prova. Todos os direitos reservados.</p>
+        <p class="text-sm opacity-80">Transformando estudantes em especialistas.</p>
+    </footer>
+
+    <script>
+        // Countdown Timer Script
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            const interval = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    clearInterval(interval);
+                    const timerBanner = document.getElementById('timer-banner');
+                    timerBanner.innerHTML = "PROMOÇÃO ENCERRADA!";
+                    timerBanner.style.backgroundColor = '#DC2626'; // Vermelho
+                    timerBanner.style.color = 'white';
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            // Timer duration: 7 minutes and 32 seconds
+            const initialTime = (7 * 60) + 32;
+            const display = document.getElementById('countdown-timer');
+            startTimer(initialTime, display);
+
+            // Set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            
+            // Smooth scroll for internal links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        };
+    </script>
+
+</body>
+</html>
